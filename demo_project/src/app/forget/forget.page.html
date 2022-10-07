@@ -1,0 +1,22 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>forget</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<h1>Reset your password</h1>
+<ion-content>
+  <ion-item class="email">
+    <ion-label position="floating">Email</ion-label>
+    <ion-input [(ngModel)]="email" name="text" class="email"></ion-input>
+  </ion-item>
+  <ion-item >
+    <ion-label position="floating">Password</ion-label>
+    <ion-input  type="password" [(ngModel)]="password" name="text" class="password"></ion-input>
+  </ion-item>
+
+  
+      <ion-button expand="block" class="reset"  color="danger" (click)="Forgot()"> <ion-icon name="refresh-outline"></ion-icon>Reset Password</ion-button>
+      <ion-button expand="block" class="login"  color="danger" (click)="back()"><ion-icon name="arrow-back-outline"></ion-icon>Login</ion-button>
+  
+</ion-content>
+

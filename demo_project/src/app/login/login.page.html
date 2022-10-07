@@ -1,0 +1,23 @@
+
+<div class="center" id="login">
+  <h3>Proceed with your</h3>
+  <h1>Login</h1>
+  <form action="">
+      <div class="txt_field">
+          <input type="text" required [(ngModel)]="username" name="text">
+          <span></span>
+          <label>Username</label>
+          <i class="fa-regular fa-user"></i>
+      </div>
+      <div class="txt_field">
+          <input type="password" required [(ngModel)]="password" name="text">
+          <span></span>
+          <label>password</label>
+          <i class="fa-solid fa-unlock-keyhole"></i>
+      </div>
+      <button  class="button" (click)="login()">Login <ion-icon name="log-in-outline"></ion-icon></button>
+      <div class="signup_link">
+      <a (click)="nextpage()">Forgot password?</a>
+      </div>
+  </form>
+</div>
